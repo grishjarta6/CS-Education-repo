@@ -200,6 +200,10 @@ bool is_permutation(int* A, int* B, int size) {
     return true;
 }
 
+
+1 2 3 4
+4 3 1 2
+
 void ts9() {
     int size;
     cin >> size;
@@ -218,6 +222,19 @@ void ts9() {
         cout << "NO";
     }
 }
+
+struct MyList {
+	Node* head;
+	void init() { head = nullptr;}
+	void push_front(int el);
+	void push_back(int el);
+	void remove_front();
+	void remove_back();
+	bool is_empty() { return (head == nullptr); }
+	void print();
+    void reverse();
+};
+
 
 int main() {
     //ts1();
