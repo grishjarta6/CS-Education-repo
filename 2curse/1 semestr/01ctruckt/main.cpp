@@ -58,6 +58,6 @@ void ts2(){
 
 int main(){
     //ts1();
-    ts2();
+    ts2()
     return 0;
 }
