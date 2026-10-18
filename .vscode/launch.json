@@ -8,8 +8,8 @@
       "args": [],
       "stopAtEntry": false,
       "externalConsole": true,
-      "cwd": ".",
-      "program": "build/Debug/outDebug",
+      "cwd": "c:/Users/user/Documents/ucheba/CS-Education-repo/2curse/1 semestr/01ctruckt",
+      "program": "c:/Users/user/Documents/ucheba/CS-Education-repo/2curse/1 semestr/01ctruckt/build/Debug/outDebug",
       "MIMode": "gdb",
       "miDebuggerPath": "gdb",
       "setupCommands": [
