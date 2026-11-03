@@ -48,7 +48,7 @@ void ts13(){
 }
 
 
-class cat2{public: int age; int buildyear;};
+class cat2{public: int age; int buildyear; string name; };
 
 void ts14(){
     int n, i, a, e;
@@ -65,12 +65,50 @@ void ts14(){
     }
 }
 
+class cat3{
+    public: 
+        int age; 
+        int year; 
+        string name;
+    void write(string n, int a, int y) {
+        name = n;
+        if (a < 1) a = 1;
+        else if (a > 100) a = 100;
+        age = a;
+        if (y < 2018) y = 2018;
+        else if (y > 2034) y = 2034;
+        year = y;
+    }
+        
+    void print() {
+        cout << "C.A.T. " << name << " need recharging at "
+             << year + age << endl;
+    }
+};
 
+
+void ts21(){
+    cat3 c1, c2, c3;
+    int a, b;
+    string n;
+    cin >> n >> a >> b;
+    c1.write(n, a, b);
+    cin >> n >> a >> b;
+    c2.write(n, a, b);
+    cin >> n >> a >> b;
+    c3.write(n, a, b);
+
+    c1.print();
+    c2.print();
+    c3.print();
+
+}
 
 int main(){
     //ts11();
     //ts12();
     //ts13();
     //ts14();
+    ts21();
     return 0;
 }
