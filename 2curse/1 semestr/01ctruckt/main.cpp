@@ -14,7 +14,7 @@ struct Student {
 };
 
 Student write_Student(){
-    Student s{}; // {} обнуляет все поля, предотвращая мусор!
+    Student s{}; 
     
     cout << "s name: ";
     cin >> s.name;
@@ -26,14 +26,6 @@ Student write_Student(){
     cin >> s.grade;
     cout << "mark count: ";
     cin >> s.mark_count;
-    
-    // Если пользователь ввел ерунду, cin сломается, и mark_count может стать огромным. 
-    // Проверяем это:
-    if (!cin || s.mark_count > 1000) { 
-        cout << "Ошибка ввода!" << endl;
-        exit(1); 
-    }
-
     s.marks = new int[s.mark_count];
     cout << "marks: ";
     for (int i = 0; i < s.mark_count; i++) {
