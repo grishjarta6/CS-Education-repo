@@ -9,10 +9,16 @@ class vector{
         int* data;
 
     public:
-        void initVec(int n){
+        vector(int n){
             size = n;
             data = new int[size];
+            write();
         }
+        ~vector(){DelVec();}
+        //void initVec(int n){
+        //    size = n;
+        //    data = new int[size];
+        //}
 
         void DelVec(){ delete [] data;}
 
